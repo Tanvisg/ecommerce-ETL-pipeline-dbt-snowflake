@@ -1,8 +1,8 @@
 # 🛒 E-Commerce ETL & Analytics Pipeline
 
-An end-to-end **E-Commerce data engineering and analytics pipeline** built using **Amazon S3, Snowflake, and dbt**.
+An end-to-end **E-Commerce ETL/ELT data pipeline** built using **Amazon S3, Snowflake, dbt, and SQL**.
 
-The project demonstrates how raw e-commerce data can be ingested, transformed, tested, modeled into a dimensional warehouse, and prepared for analytics.
+The project transforms raw E-Commerce data into structured, analytics-ready datasets using modern data engineering and analytics engineering practices.
 
 ---
 
@@ -10,47 +10,23 @@ The project demonstrates how raw e-commerce data can be ingested, transformed, t
 
 ```mermaid
 flowchart LR
-
     A[Raw E-Commerce Data] --> B[Amazon S3]
-
     B --> C[Snowflake RAW Layer]
+    C --> D[dbt Staging Layer]
 
-    C --> D[dbt Staging]
-
-    D --> E[Dimensions]
-    D --> F[Facts]
+    D --> E[Dimension Models]
+    D --> F[Fact Models]
 
     E --> G[Analytics Marts]
     F --> G
 
     G --> H[BI / Analytics]
+```
 
-Source Data
-     │
-     ▼
-Amazon S3
-     │
-     ▼
-Snowflake RAW
-     │
-     ▼
-dbt Staging
-     │
-     ├──────────────┐
-     ▼              ▼
-Dimensions       Fact Tables
-     │              │
-     └──────┬───────┘
-            ▼
-      Analytics Marts
-            │
-            ▼
-       BI / Reporting
-
-| Technology       | Purpose                          |
-| ---------------- | -------------------------------- |
-| **Amazon S3**    | Cloud storage for raw data       |
-| **Snowflake**    | Cloud data warehouse             |
-| **dbt**          | Data transformation and modeling |
-| **SQL**          | Data transformation and analysis |
-| **Git & GitHub** | Version control                  |
+🛠️ Tech Stack
+Technology	Purpose
+Amazon S3	Raw data storage
+Snowflake	Cloud data warehouse
+dbt	Data transformation, testing & documentation
+SQL	Data transformation & analysis
+Git / GitHub	Version control
