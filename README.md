@@ -29,6 +29,7 @@ Raw Data → Amazon S3 → Snowflake → dbt Staging → Dimensions & Facts → 
 
 ## 📂 Project Structure
 
+```text
 hmart/
 │
 ├── analyses/
@@ -71,4 +72,5 @@ hmart/
 │
 ├── dbt_project.yml
 ├── packages.yml
+└── README.md
 └── README.md
