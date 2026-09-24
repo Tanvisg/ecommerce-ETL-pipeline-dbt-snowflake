@@ -69,9 +69,6 @@ hmart/
 ```
 
 
-###  Data Modeling
-
-```markdown
 ## 🧩 Data Modeling
 
 The project uses a dimensional modeling approach with separate **dimension**, **fact**, and **analytics mart** layers.
@@ -96,7 +93,6 @@ The project uses a dimensional modeling approach with separate **dimension**, **
 - Product performance
 - Coupon effectiveness
 - Order status analysis
-```
 
 ## ⚙️ Key dbt Features
 
@@ -108,9 +104,6 @@ The project uses a dimensional modeling approach with separate **dimension**, **
 - **Documentation** — Generated using dbt documentation
 
 
-### Analytics
-
-```markdown
 ## 📊 Analytics
 
 The analytics marts are designed to answer common e-commerce business questions:
