@@ -1,26 +1,15 @@
-# 🛒 E-Commerce ETL & Analytics Pipeline
+Welcome to your new dbt project!
 
-An end-to-end **E-Commerce data engineering and analytics pipeline** built using **Amazon S3, Snowflake, and dbt**.
+### Using the starter project
 
-The project demonstrates how raw e-commerce data can be ingested, transformed, tested, modeled into a dimensional warehouse, and prepared for analytics.
+Try running the following commands:
+- dbt run
+- dbt test
 
----
 
-## 🏗️ Architecture
-
-```mermaid
-flowchart LR
-
-    A[Raw E-Commerce Data] --> B[Amazon S3]
-
-    B --> C[Snowflake RAW Layer]
-
-    C --> D[dbt Staging]
-
-    D --> E[Dimensions]
-    D --> F[Facts]
-
-    E --> G[Analytics Marts]
-    F --> G
-
-    G --> H[BI / Analytics]
+### Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
