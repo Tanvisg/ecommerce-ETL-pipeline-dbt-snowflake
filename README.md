@@ -68,3 +68,62 @@ hmart/
 └── packages.yml
 ```
 
+
+###  Data Modeling
+
+```markdown
+## 🧩 Data Modeling
+
+The project uses a dimensional modeling approach with separate **dimension**, **fact**, and **analytics mart** layers.
+
+### Dimensions
+
+- `dim_customers` — Customer attributes
+- `dim_products` — Product attributes
+- `dim_dates` — Date dimension for time-based analysis
+
+### Facts
+
+- `fct_sales` — Order-item level sales transactions
+- `fct_orders` — Order-level metrics
+
+### Analytics Marts
+
+- Monthly revenue analysis
+- Revenue breakdown
+- Customer RFM segmentation
+- Cohort retention
+- Product performance
+- Coupon effectiveness
+- Order status analysis
+```
+
+## ⚙️ Key dbt Features
+
+- **Incremental Models** — Incremental processing for `fct_sales` to improve efficiency as data grows
+- **Snapshots** — Historical tracking of customer and product changes
+- **Data Quality Tests** — Built-in and custom tests for validating data integrity
+- **Jinja & dbt Macros** — Reusable SQL logic and dynamic transformations
+- **Dependencies** — Managed using `dbt deps`
+- **Documentation** — Generated using dbt documentation
+
+
+### Analytics
+
+```markdown
+## 📊 Analytics
+
+The analytics marts are designed to answer common e-commerce business questions:
+
+| Mart | Purpose |
+|---|---|
+| Monthly Revenue | Track revenue trends over time |
+| Revenue Breakdown | Analyze revenue across business dimensions |
+| Customer RFM | Segment customers based on Recency, Frequency, and Monetary value |
+| Cohort Retention | Analyze customer retention by acquisition cohort |
+| Product Performance | Evaluate product-level sales performance |
+| Coupon Effectiveness | Measure coupon usage and impact |
+| Order Status Rates | Analyze order completion and status patterns |
+```
+
+
