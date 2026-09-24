@@ -117,6 +117,6 @@ The analytics marts are designed to answer common e-commerce business questions:
 | Product Performance | Evaluate product-level sales performance |
 | Coupon Effectiveness | Measure coupon usage and impact |
 | Order Status Rates | Analyze order completion and status patterns |
-```
+
 
 
