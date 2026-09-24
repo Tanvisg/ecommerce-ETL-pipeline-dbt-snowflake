@@ -28,6 +28,8 @@ The pipeline follows a layered ELT architecture:
 ```text
 hmart/
 │
+├── analyses/
+│   └── customer_revenue_analysis.sql
 ├── models/
 │   ├── staging/
 │   │   ├── src_customers.sql
@@ -58,11 +60,7 @@ hmart/
 │   ├── snap_customers.sql
 │   └── snap_products.sql
 │
-├── tests/
-│   └── assert_net_amount_not_greater_than_gross.sql
 │
-├── analyses/
-│   └── customer_revenue_analysis.sql
 │
 ├── dbt_project.yml
 └── packages.yml
