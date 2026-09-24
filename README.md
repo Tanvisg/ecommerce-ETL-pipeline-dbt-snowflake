@@ -23,6 +23,6 @@ flowchart LR
     G --> H[BI / Analytics]
 ```
 
-Pipeline Flow
+## Pipeline Flow
 
 Raw Data → Amazon S3 → Snowflake → dbt Staging → Dimensions & Facts → Analytics Marts → BI / Analytics
